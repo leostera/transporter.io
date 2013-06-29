@@ -5,9 +5,13 @@ var i = 0;
 
 server.on('connection', function (socket) {
   setInterval(function () {
-    var obj = JSON.stringify({message: "Yippee Ki Yay",
-      options: {
-        title: "Message Number "+i
+    var obj = JSON.stringify({
+      label: "testEvent",
+      data: {
+        message: "Yippee Ki Yay",
+        options: {
+          title: "Message Number "+i
+        }
       }
     });
     console.log("Sending",obj)

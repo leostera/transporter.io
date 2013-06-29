@@ -1,7 +1,6 @@
 var eio = require('engine.io-client')
-  , growl = require('growl');
 
-var notifications = {
+var dispatcher = {
   io: eio,
 
   socket: null,
@@ -11,27 +10,24 @@ var notifications = {
   subscriptions: [],
   
   connect: function (uri) {
-    console.log("Connecting to", uri);
     this.socket = this.io(uri);
-    console.log("...result:", !!this.socket);
   },
 
   subscribe: function (eventName) {
-    console.log('Subscribing to', eventName);
     if(this.socket) {
-      this.socket.on('message', function (data) {
-        var data = JSON.parse(data);
-        console.log("Receiving", data);
-        this.notify(data);
+      this.socket.on('message', function (message) {
+        var message = JSON.parse(message);
+        if(message.label === eventName) {
+          this.notify(message.data);
+        }
       }.bind(this));
       this.subscriptions.push(eventName);
     } else {
-      console.log('Oops! No socket!');
+      throw new Error('Failed to use null socket.');
     }
   },
 
   notify: function (data) {
-    console.log("Publishing data to "+this.transports.length+" transports");
     this.transports.forEach(function (t) {
       t.publish(data);
     });
@@ -39,13 +35,4 @@ var notifications = {
 
 };
 
-notifications.transports.push({
-  publish: function (data) {
-    console.log("Growling", data);
-    growl(data.message, data.options);
-  }
-});
-
-notifications.connect('ws://localhost:3000');
-
-notifications.subscribe('test');
+module.exports = dispatcher;

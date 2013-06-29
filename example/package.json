@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "dispatcher.io-growl": "*",
+    "engine.io": "*"
+  }
+}
