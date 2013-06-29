@@ -1,0 +1,30 @@
+{
+  "name": "notifications.io",
+  "version": "0.0.0",
+  "description": "A simple client side notifications transport system over websockets.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leostera/notifications.io"
+  },
+  "keywords": [
+    "notifications",
+    "transport",
+    "system",
+    "websockets"
+  ],
+  "author": "Leandro Ostera <sayhi@leostera.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leostera/notifications.io/issues"
+  },
+  "dependencies": {
+    "async": "~0.2.9",
+    "engine.io": "~0.6.3",
+    "engine.io-client": "~0.6.3",
+    "growl": "~1.7.0"
+  }
+}
