@@ -4,7 +4,7 @@
 ### Usage 
 It's intended to be quite easy:
 
-```
+```js
 var dio = require('dispatcher.io')
   , growl = require('dispatcher.io-growl');
 
