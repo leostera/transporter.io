@@ -5,7 +5,7 @@
 It's intended to be quite easy:
 
 ```
-var dio = require('../')
+var dio = require('dispatcher.io')
   , growl = require('dispatcher.io-growl');
 
 dio.transports.push(growl);
