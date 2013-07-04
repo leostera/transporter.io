@@ -1,6 +1,6 @@
 {
   "name": "transporter.io",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "a transporter transport system over websockets.",
   "main": "index.js",
   "scripts": {
@@ -23,5 +23,9 @@
   },
   "dependencies": {
     "engine.io-client": "~0.6.3"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
   }
 }
