@@ -19,5 +19,5 @@ It doesn't have any security layer yet but it's in my plans to add both bcrypt, 
 For the time being a transport is only an object with a publish function that handles the data received by the socket. It's quite easy to make your own one so get creative! Check [the growl transport](https://github.com/leostera/transporter.io-growl) for an example.
 
 ### Credits
-Made with <3 by Leandro Ostera
+Made with :heart: by Leandro Ostera
 
