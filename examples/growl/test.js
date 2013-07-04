@@ -1,5 +1,5 @@
-var dio = require('dispatcher.io')
-  , growl = require('dispatcher.io-growl');
+var dio = require('transporter.io')
+  , growl = require('transporter.io-growl');
 
 dio.transports.push(growl);
 dio.connect('ws://localhost:3000');

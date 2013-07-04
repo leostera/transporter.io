@@ -1,5 +1,5 @@
-var dio = require('dispatcher.io')
-  , events = require('dispatcher.io-events');
+var dio = require('transporter.io')
+  , events = require('transporter.io-events');
 
 dio.transports.push(events);
 dio.connect('ws://localhost:3000');

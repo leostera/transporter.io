@@ -1,6 +1,6 @@
 var eio = require('engine.io-client')
 
-var dispatcher = {
+var transporter = {
   io: eio,
 
   socket: null,
@@ -35,4 +35,4 @@ var dispatcher = {
 
 };
 
-module.exports = dispatcher;
+module.exports = transporter;

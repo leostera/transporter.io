@@ -1,7 +1,7 @@
 {
   "dependencies": {
-    "dispatcher.io": "*",
-    "dispatcher.io-exec": "*",
+    "transporter.io": "*",
+    "transporter.io-exec": "*",
     "engine.io": "*"
   }
 }

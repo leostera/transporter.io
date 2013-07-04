@@ -1,17 +1,17 @@
 {
-  "name": "dispatcher.io",
+  "name": "transporter.io",
   "version": "0.0.0",
-  "description": "a dispatcher transport system over websockets.",
+  "description": "a transporter transport system over websockets.",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/leostera/dispatcher.io"
+    "url": "https://github.com/leostera/transporter.io"
   },
   "keywords": [
-    "dispatcher",
+    "transporter",
     "transport",
     "system",
     "websockets"
@@ -19,7 +19,7 @@
   "author": "Leandro Ostera <sayhi@leostera.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/leostera/dispatcher.io/issues"
+    "url": "https://github.com/leostera/transporter.io/issues"
   },
   "dependencies": {
     "engine.io-client": "~0.6.3"
