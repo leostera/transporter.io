@@ -1,5 +1,7 @@
 # transporter.io
-## a transporter transport system over websockets
+## a transport system over websockets
+
+![](http://1.bp.blogspot.com/_dUlRbbtjWQA/S9__rfLmgMI/AAAAAAAAACQ/B5CJycibMgg/s1600/TheTransporter1.jpg)
 
 ### Usage 
 It's intended to be quite easy:
